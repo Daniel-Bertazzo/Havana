@@ -13,6 +13,7 @@
 /*.jar
 gradlew.bat
 run.bat
+.vscode
 
 /tools/db/schema.sql
 
