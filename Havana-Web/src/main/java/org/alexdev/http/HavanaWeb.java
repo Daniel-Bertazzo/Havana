@@ -6,8 +6,6 @@ import org.alexdev.duckhttpd.routes.RouteManager;
 import org.alexdev.duckhttpd.server.WebServer;
 import org.alexdev.duckhttpd.util.config.Settings;
 import org.alexdev.havana.dao.Storage;
-import org.alexdev.havana.dao.mysql.LogDao;
-import org.alexdev.havana.game.catalogue.CatalogueManager;
 import org.alexdev.havana.game.item.ItemManager;
 import org.alexdev.havana.game.wordfilter.WordfilterManager;
 import org.alexdev.havana.log.Log;

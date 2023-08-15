@@ -121,6 +121,9 @@
                         {% else %}
                         <div id="hotel-closed-medium">{{ site.siteName }} Hotel is offline</div>
                         {% endif %}
+						{% if playerDetails.getRank().getRankId() >= 6 %}
+						<a href="{{ site.sitePath }}/allseeingeye/hk/" class="new-button red-button"><b>Housekeeping</b><i></i></a>
+						{% endif %}
 			</div>
         </div>
 		<script type="text/javascript">
@@ -170,9 +173,6 @@
 			<li>
 				<a href="{{ site.sitePath }}/games">Games</a>			<span></span>
 			</li>
-			{% endif %}
-			{% if playerDetails.getRank().getRankId() >= 6 %}
-				<li id="tab-register-now"><a href="{{ site.sitePath }}/allseeingeye/hk/">Housekeeping</a><span></span></li>
 			{% endif %}
 			
 		</ul>
