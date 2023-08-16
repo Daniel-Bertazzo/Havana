@@ -3,7 +3,7 @@
 	{% set dashboardActive = " active " %}
 	{% include "housekeeping/base/navigation.tpl" %}
      <h1 class="mt-4">Hotel Statistics</h1>
-		  <p>Welcome to the housekeeping for {{ site.siteName }} Hotel, here you can manage a lot of things at once, such as users, news, site content and view the statistics of the hotel.</p>
+		  <p>Welcome to the housekeeping for {{ site.siteName }} Hotel! here you can manage a lot of things at once, such as users, news, site content and view the statistics of the hotel.</p>
 		   <div class="table-responsive col-md-4">
             <table class="table table-striped">
 			<thead>

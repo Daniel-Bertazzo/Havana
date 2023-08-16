@@ -284,6 +284,7 @@ public class Routes {
         RouteManager.addRoute("/habbo-imaging/*", ImagerController::imager_redirect);
 
         // Housekeeping
+        // HOUSEKEEPING_PATH = "allseeingeye/hk"
         RouteManager.addRoute("/" + HOUSEKEEPING_PATH + "", HousekeepingController::dashboard);
         RouteManager.addRoute("/" + HOUSEKEEPING_PATH + "/", HousekeepingController::dashboard);
         RouteManager.addRoute("/" + HOUSEKEEPING_PATH + "/login", HousekeepingController::login);

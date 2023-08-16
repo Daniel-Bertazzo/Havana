@@ -19,7 +19,7 @@ public class HousekeepingController {
      * @param client the connection
      */
     public static void dashboard(WebConnection client) {
-        // If they are logged in, send them to the /me page
+        // If the user is not already logged into HK, send them to the login page
         if (!client.session().getBoolean(SessionUtil.LOGGED_IN_HOUSKEEPING)) {
             Template tpl = client.template("housekeeping/login");
             tpl.render();

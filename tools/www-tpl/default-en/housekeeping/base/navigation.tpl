@@ -32,9 +32,9 @@
 		<!-- <a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/articles/create" class="list-group-item list-group-item-action {{ createArticlesActive }}">Post News Article</a> -->
 		{% endif %}
 		
-		{% if housekeepingManager.hasPermission(playerDetails.getRank(), 'users/create') %}
+		{% if housekeepingManager.hasPermission(playerDetails.getRank(), 'user/create') %}
         <a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/users/search" class="list-group-item list-group-item-action {{ searchUsersActive }}">Search Users</a>
-		<a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/users/create" class="list-group-item list-group-item-action {{ createUserActive }}">Create New User</a>
+		    <a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/users/create" class="list-group-item list-group-item-action {{ createUserActive }}">Create New User</a>
 		{% endif %}
 		
 		{% if housekeepingManager.hasPermission(playerDetails.getRank(), 'transaction/lookup') %}
@@ -43,6 +43,10 @@
 		
 		{% if housekeepingManager.hasPermission(playerDetails.getRank(), 'catalogue/edit_frontpage') %}
 		<a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/catalogue/edit_frontpage" class="list-group-item list-group-item-action {{ editCatalogueFrontPage }}">Catalogue Frontpage</a>
+		{% endif %}
+
+    {% if housekeepingManager.hasPermission(playerDetails.getRank(), 'vouchers') %}
+		<a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/vouchers" class="list-group-item list-group-item-action {{ editCatalogueFrontPage }}">New tab</a>
 		{% endif %}
       </div>
     </div>
