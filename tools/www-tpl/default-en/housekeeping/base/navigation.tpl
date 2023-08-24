@@ -46,7 +46,7 @@
 		{% endif %}
 
     {% if housekeepingManager.hasPermission(playerDetails.getRank(), 'vouchers') %}
-		<a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/vouchers" class="list-group-item list-group-item-action {{ editCatalogueFrontPage }}">New tab</a>
+		<a href="{{ site.sitePath }}/{{ site.housekeepingPath }}/vouchers" class="list-group-item list-group-item-action {{ vouchersActive }}">Voucher Management</a>
 		{% endif %}
       </div>
     </div>
